@@ -199,21 +199,21 @@ export default function Home() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger>When will Comet Marketplace launch?</AccordionTrigger>
                   <AccordionContent>
-                    We're planning to launch at the beginning of the Fall 2023 semester. Join our waitlist to be
+                    We&apos;re planning to launch at the beginning of the Fall 2023 semester. Join our waitlist to be
                     notified as soon as we go live!
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Who can use Comet Marketplace?</AccordionTrigger>
                   <AccordionContent>
-                    Comet Marketplace is exclusively for UT Dallas students, faculty, and staff. You'll need a valid UTD
+                    Comet Marketplace is exclusively for UT Dallas students, faculty, and staff. You&apos;ll need a valid UTD
                     email address to sign up.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Is there a fee to use the platform?</AccordionTrigger>
                   <AccordionContent>
-                    Comet Marketplace is completely free to use! We don't take any commission on sales or charge listing
+                    Comet Marketplace is completely free to use! We don&apos;t take any commission on sales or charge listing
                     fees.
                   </AccordionContent>
                 </AccordionItem>
