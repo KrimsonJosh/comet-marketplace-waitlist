@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { CheckCircle, ShoppingBag, Users, Shield } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { WaitlistForm } from "@/components/WaitlistForm"
 
 export default function Home() {
   return (
@@ -44,15 +44,7 @@ export default function Home() {
                   Buy, sell, and trade with fellow Comets. Textbooks, furniture, electronics, and more - all within the
                   UTD community.
                 </p>
-                <div className="w-full max-w-sm space-y-2">
-                  <form className="flex w-full max-w-sm items-center space-x-2">
-                    <Input type="email" placeholder="Enter your UTD email" className="flex-1 cursor-text" />
-                    <Button type="submit" className="bg-orange-500 hover:bg-orange-600 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                      Join Waitlist
-                    </Button>
-                  </form>
-                  <p className="text-xs text-gray-500">Be the first to know when we launch. UTD email required.</p>
-                </div>
+                <WaitlistForm variant="hero" />
               </div>
               <div className="mx-auto lg:mx-0">
                 <Image
@@ -168,18 +160,7 @@ export default function Home() {
                   Join our waitlist today and get early access when we launch.
                 </p>
               </div>
-              <div className="w-full max-w-sm space-y-2">
-                <form className="flex w-full max-w-sm items-center space-x-2">
-                  <Input
-                    type="email"
-                    placeholder="Enter your UTD email"
-                    className="flex-1 bg-white/10 text-white placeholder:text-white/70 border-white/20 focus-visible:ring-white cursor-text"
-                  />
-                  <Button type="submit" className="bg-white text-orange-500 hover:bg-white/90 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                    Join Now
-                  </Button>
-                </form>
-              </div>
+              <WaitlistForm variant="cta" />
             </div>
           </div>
         </section>
