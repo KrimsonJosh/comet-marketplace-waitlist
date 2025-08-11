@@ -1,4 +1,4 @@
-const API_BASE_URL = '/api/waitlist';
+const API_BASE_URL = 'https://comet-market-backend.onrender.com';
 
 export interface WaitlistEntry {
   email: string;
@@ -48,6 +48,6 @@ export class WaitlistAPI {
       ...(name && { name: name.trim() }),
     };
 
-    return this.makeRequest('/join', data);
+    return this.makeRequest('/waitlist/join', data);
   }
 } 
