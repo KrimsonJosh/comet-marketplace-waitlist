@@ -1,4 +1,5 @@
 const API_BASE_URL = 'https://comet-market-backend.onrender.com';
+const WAITLIST_API_KEY = process.env.WAITLIST_API_KEY || '';
 
 export interface WaitlistEntry {
   email: string;
@@ -20,6 +21,7 @@ export class WaitlistAPI {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'x-waitlist-key': WAITLIST_API_KEY,
         },
         body: JSON.stringify(data),
       });
