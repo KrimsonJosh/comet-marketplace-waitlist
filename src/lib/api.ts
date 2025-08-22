@@ -21,7 +21,6 @@ export class WaitlistAPI {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'x-waitlist-key': WAITLIST_API_KEY,
         },
         body: JSON.stringify(data),
       });
